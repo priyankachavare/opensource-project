@@ -36,7 +36,7 @@
                             <div class="navbar-header">
                                 <div class="navbar-brand">
                                     <h1>
-                                        <a href="index-2.html">
+                                        <a href="index.php">
                                             <img src="images/libraria-logo-v3.png" alt="LIBRARIA" />
                                         </a>
                                     </h1>
@@ -46,17 +46,17 @@
                             <div class="navbar-collapse hidden-sm hidden-xs">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown active">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index-2.html">Home</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index.php">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                                 <!-- Header Topbar -->
                                 <div class="header-topbar hidden-md">
                                     <div class="topbar-links">
-                                        <a href="signin.html"><i class="fa fa-lock"></i>Login / Register</a>
+                                        <a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>
                                     </div>
                                 </div>
                                 <!-- Header Topbar -->
@@ -71,10 +71,10 @@
                                         <a href="#" class="close"></a>
                                     </li>
                                     <li>
-                                        <a href="index-2.html">Home</a>
+                                        <a href="index.php">Home</a>
                                     </li>
                                     <li>
-                                        <a href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -99,7 +99,7 @@
                             <h2>What’s all the Libraria?</h2>
                             <p>Libraria gives you access to <strong>Audiobooks,</strong> <strong>eBooks,</strong> <strong>Music,</strong> <strong>Movies and Comics.</strong></p>
                             <div class="filter-box">
-                                <form action="http://demo.presstigers.com/libraria/public_html/index.html" class="banner-filter-box" method="get">
+                                <form action="http://demo.presstigers.com/libraria/public_html/index.php" class="banner-filter-box" method="get">
                                     <div class="form-group">
                                         <label class="sr-only" for="keywords">Search by Keyword</label>
                                         <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keywords" type="text">
@@ -165,8 +165,8 @@
                         </div>
                         <div class="col-md-9 pull-right">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="books-media-list-view.html">Books &amp; Media</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="books-media-gird-view-v2.php">Books &amp; Media</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>

@@ -10,8 +10,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     $result=mysqli_query($conn,$sql);
     if ($result) 
     {
+        session_start();
          $_SESSION["name"] = $name;
          $_SESSION["email"] = $email;
+         header
     }
     else
     {

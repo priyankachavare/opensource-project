@@ -38,7 +38,7 @@
                             <div class="navbar-header">
                                 <div class="navbar-brand">
                                     <h1>
-                                        <a href="index-2.html">
+                                        <a href="index.php">
                                             <img src="images/libraria-logo-v3.png" alt="LIBRARIA" />
                                         </a>
                                     </h1>
@@ -48,10 +48,10 @@
                             <div class="navbar-collapse hidden-sm hidden-xs">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown active">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index-2.html">Home</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index.php">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -66,10 +66,10 @@
                                         <a href="#" class="close"></a>
                                     </li>
                                     <li>
-                                        <a href="index-2.html">Home</a>
+                                        <a href="index.php">Home</a>
                                     </li>
                                     <li>
-                                        <a href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Signin</li>
                     </ul>
                 </div>
@@ -204,8 +204,8 @@
                         </div>
                         <div class="col-md-9 pull-right">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="books-media-list-view.html">Books &amp; Media</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="books-media-gird-view-v2.php">Books &amp; Media</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -268,5 +268,5 @@
 
     </body>
 
-<!-- Mirrored from demo.presstigers.com/libraria/public_html/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2017 14:38:48 GMT -->
+<!-- Mirrored from demo.presstigers.com/libraria/public_html/signin.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2017 14:38:48 GMT -->
 </html>
