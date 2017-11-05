@@ -14,10 +14,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     $result=mysqli_query($conn,$sql);
     if($result) 
     { 
-        echo "<script>alert(\"uploaded\")</script><br>";
+        echo "<script>alert(\"Uploaded\")</script><br>";
+        header("Location: user-dash-board.php");
     }
     else 
     {
-            echo "<script>alert(\"sorry\")</script><br>";
+            echo "<script>alert(\"Sorry\")</script><br>";
+            header("Location: user-dash-board.php");
     }
 }

@@ -18,17 +18,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             {
                 $_SESSION['name'] = $name;
                 $_SESSION['email']=$row['email'];
-                echo "done";
+                header("Location: books-media-gird-view-v2.php");
             }
             else
             {
                 echo "<script>alert(\"PASSWORD DOES NOT MATCH\")</script><br>";
+                header("Location: signin.php");
             }
         }
     }
     else
     {
         echo "<script>alert(\"USER DOES NOT EXISTS\")</script><br>";
+        header("Location: signin.php");
     }
     
 }

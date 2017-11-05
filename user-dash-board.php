@@ -49,13 +49,27 @@
                             <div class="navbar-collapse hidden-sm hidden-xs">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown active">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index-2.html">Home</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="index.php">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
+                                <!-- Header Topbar -->
+                                <div class="header-topbar hidden-md">
+                                    <div class="topbar-links">
+                                    <?php 
+                                    if(!isset($_SESSION['email'])){
+                                        header("Location: signin.php");
+                                    }
+                                    else{
+                                        echo '<a href="#"><i class="fa fa-user"></i> '.$_SESSION['name'].'</a>';
+                                    }
+                                    ?>
+                                    </div>
+                                </div>
+                                <!-- Header Topbar -->
                             </div>
                         </div>
                         <div class="mobile-menu hidden-md hidden-lg">
@@ -67,10 +81,10 @@
                                         <a href="#" class="close"></a>
                                     </li>
                                     <li>
-                                        <a href="index-2.html">Home</a>
+                                        <a href="index.php">Home</a>
                                     </li>
                                     <li>
-                                        <a href="books-media-list-view.html">Books &amp; Media</a>
+                                        <a href="books-media-gird-view-v2.php">Books &amp; Media</a>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -137,9 +151,12 @@
                                                             <span class="underline left"></span>
                                                             <div style="margin-left:50%">
                                                                             <img src="https://www.w3schools.com/howto/img_avatar.png" style="height: 150px;width:150px;border-radius: 50%;">
-                                                                            <center><br><label> Name</label>
-                                                                            <br><label> Email</label>
-                                                                            <br><label> LogOut</label></center>
+                                                                           <?php
+                                                                            echo "<center><br><label><h3>".$_SESSION['name']."</h3></label><br>
+                                                                            <br><label>".$_SESSION['email']."</label><br>
+                                                                            <form action=\"logout.php\" method=\"post\">
+                                                                            <br><input type=\"submit\" value=\"LogOut\" class=\"btn btn-default\"></input></center></form>";
+                                                                            ?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -166,7 +183,7 @@
                             <div class="col-md-9 pull-right">
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
-                                    <li><a href="books-media-list-view.html">Books &amp; Media</a></li>
+                                    <li><a href="books-media-gird-view-v2.php">Books &amp; Media</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>

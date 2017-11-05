@@ -13,10 +13,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         session_start();
          $_SESSION["name"] = $name;
          $_SESSION["email"] = $email;
-         header
+         header("Location: books-media-gird-view-v2.php");
     }
     else
     {
         echo "<script>alert(\"EMAIL ID ALREADY EXISTS\")</script><br>";
+        header("Location: signin.php");
     }
 }

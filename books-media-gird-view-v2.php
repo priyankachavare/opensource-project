@@ -53,13 +53,21 @@
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
-                                <!-- Header Topbar -->
-                                <div class="header-topbar hidden-md">
-                                    <div class="topbar-links">
-                                        <a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>
-                                    </div>
-                                </div>
-                                <!-- Header Topbar -->
+                               <!-- Header Topbar -->
+                               <div class="header-topbar hidden-md">
+                               <div class="topbar-links">
+                               <?php 
+                               session_start();
+                               if(!isset($_SESSION['email'])){
+                                   echo '<a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>';
+                               }
+                               else{
+                                   echo '<a href="user-dash-board.php"><i class="fa fa-user"></i> '.$_SESSION['name'].'</a>';
+                               }
+                               ?>
+                               </div>
+                           </div>
+                           <!-- Header Topbar -->
                             </div>
                         </div>
                         <div class="mobile-menu hidden-md hidden-lg">
@@ -138,7 +146,7 @@
                                     echo "<li>
                                         <div class=\"book-list-icon blue-icon\"></div>
                                         <figure>
-                                            <a href=\"http://docs.google.com/gview?url=http://localhost.com/code/public_html/data/". $row['link'] . "&embedded=true\" target=\"_blank\" style=\"width:100%; height:700px;\" frameborder=\"0\"><img src=\"images/books-media/layout-3/books-media-layout3-01.jpg\" alt=\"Book\"></a>
+                                            <a href=\"http://docs.google.com/gview?url=http://localhost.com/code/public_html/data/". $row['link'] . "&embedded=true\" target=\"_blank\" style=\"width:100%; height:700px;\" frameborder=\"0\"><img src=\"images/books-media/book.png\" alt=\"Book\"></a>
                                             <figcaption>
                                                 <header>
                                                     <h4><a href=\"http://docs.google.com/gview?url=http://localhost.com/code/public_html/data/". $row['link'] . "&embedded=true\" target=\"_blank\" style=\"width:100%; height:700px;\" frameborder=\"0\">". $row['name'] . "</a></h4>

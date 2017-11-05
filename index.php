@@ -56,7 +56,15 @@
                                 <!-- Header Topbar -->
                                 <div class="header-topbar hidden-md">
                                     <div class="topbar-links">
-                                        <a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>
+                                    <?php 
+                                    session_start();
+                                    if(!isset($_SESSION['email'])){
+                                        echo '<a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>';
+                                    }
+                                    else{
+                                        echo '<a href="user-dash-board.php"><i class="fa fa-user"></i> '.$_SESSION['name'].'</a>';
+                                    }
+                                    ?>
                                     </div>
                                 </div>
                                 <!-- Header Topbar -->
@@ -99,34 +107,6 @@
                             <h2>What’s all the Libraria?</h2>
                             <p>Libraria gives you access to <strong>Audiobooks,</strong> <strong>eBooks,</strong> <strong>Music,</strong> <strong>Movies and Comics.</strong></p>
                             <div class="filter-box">
-                                <form action="http://demo.presstigers.com/libraria/public_html/index.php" class="banner-filter-box" method="get">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="keywords">Search by Keyword</label>
-                                        <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keywords" type="text">
-                                    </div>
-                                    <div class="form-group">
-                                        <select name="catalog" id="catalog" class="form-control">
-                                            <option>Search the Catalog</option>
-                                            <option>Catalog 01</option>
-                                            <option>Catalog 02</option>
-                                            <option>Catalog 03</option>
-                                            <option>Catalog 04</option>
-                                            <option>Catalog 05</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select name="category" id="category" class="form-control">
-                                            <option>All Categories</option>
-                                            <option>Category 01</option>
-                                            <option>Category 02</option>
-                                            <option>Category 03</option>
-                                            <option>Category 04</option>
-                                            <option>Category 05</option>
-                                        </select>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <input class="form-control" type="submit" value="Search">
-                                </form>
                             </div>
                         </div>
                     </div>

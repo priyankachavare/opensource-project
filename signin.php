@@ -73,6 +73,21 @@
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
+                                <!-- Header Topbar -->
+                                <div class="header-topbar hidden-md">
+                                    <div class="topbar-links">
+                                    <?php 
+                                    session_start();
+                                    if(!isset($_SESSION['email'])){
+                                        echo '<a href="signin.php"><i class="fa fa-lock"></i>Login / Register</a>';
+                                    }
+                                    else{
+                                        header("Location: user-dash-board.php");
+                                    }
+                                    ?>
+                                    </div>
+                                </div>
+                                <!-- Header Topbar -->
                             </div>
                         </div>
                     </nav>
